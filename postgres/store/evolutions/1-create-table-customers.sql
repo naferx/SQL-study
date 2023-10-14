@@ -4,7 +4,9 @@ CREATE TABLE IF NOT EXISTS customers(
 	last_name VARCHAR(50) NOT NULL
 );
 
-INSERT INTO customers(first_name, last_name)
-  VALUES('Andres', 'Suarez'),
-		('Sandra', 'Mercado'),
-		('Alberto', 'Torres');
+INSERT INTO 
+	customers(first_name, last_name)
+VALUES
+	('Andres', 'Suarez'),
+	('Sandra', 'Mercado'),
+	('Alberto', 'Torres');
