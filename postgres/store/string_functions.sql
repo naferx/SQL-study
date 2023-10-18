@@ -1,0 +1,14 @@
+SELECT 
+	LEFT('COMPUTER', 1);
+	
+SELECT 
+	RIGHT('COMPUTER', 2);
+	
+SELECT 
+	UPPER('hello world');
+	
+SELECT 
+	LOWER('DISTRIBUTED SYSTEMS');
+	
+SELECT 
+	LENGTH('Data Science');
