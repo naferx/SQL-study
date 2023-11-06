@@ -100,7 +100,7 @@ WHERE
 	id BETWEEN 1 AND 2;
 
 
-SELECT 
+SELECT
 	*
 FROM 
 	customers
