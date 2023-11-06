@@ -8,7 +8,8 @@ FROM
 
 
 SELECT 
-	date, total
+	date, 
+	total
 FROM 
 	orders
 ORDER BY 
@@ -21,7 +22,7 @@ SELECT
 FROM 
 	orders o
 INNER JOIN 
-	customers c ON o.customerId = c.id
+	customers c ON o.customer_id = c.id
 GROUP BY 
 	c.first_name
 ORDER BY 
