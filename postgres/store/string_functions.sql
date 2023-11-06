@@ -34,4 +34,42 @@ SELECT
 	FORMAT('Hello %s!', 'World');
 
 
-		
+SELECT
+	OVERLAY('desktop interactive' PLACING 'lol' FROM 2 FOR 3);
+	
+
+-- returns the first starting index of the substring
+SELECT
+	POSITION('th' IN 'ethomas'); --2
+
+
+SELECT
+	LENGTH('   FOUR   ') AS original, --10
+	LENGTH( TRIM('   FOUR   ') ) AS trimmed; -- 4
+
+
+-- returns the string representation of all arguments. Omit nulls
+SELECT
+	CONCAT('hola ', NULL, -1, false, 45.2); --hola -1f45.2
+
+
+SELECT
+	INITCAP('fiRst tIMe hERE'); --First Time Here
+
+
+SELECT
+	REPEAT('ht ', 4); --ht ht ht ht
+
+
+SELECT
+	REVERSE('ford'); --dorf
+
+
+SELECT
+	STARTS_WITH('building', 'bu'); --true
+	
+SELECT
+	STARTS_WITH('building', 'uil'); --false
+
+SELECT
+	ENDS_WITH('building', 'bu'); --true
