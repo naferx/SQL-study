@@ -1,18 +1,28 @@
 /*
 	SUM - Computes the sum of the non-null input values
 */
-SELECT SUM(TOTAL)
-FROM ORDERS;
+SELECT 
+	SUM(total)
+FROM 
+	orders;
 
 
-SELECT date, TOTAL
-FROM ORDERS
-order by 1 asc
+SELECT 
+	date, total
+FROM 
+	orders
+ORDER BY 
+	1 ASC;
 
 
-SELECT C.FIRST_NAME,
-	SUM(O.TOTAL) AS TOTAL
-FROM ORDERS O
-INNER JOIN CUSTOMERS C ON O.CUSTOMER_ID = C.ID
-GROUP BY C.FIRST_NAME
-ORDER BY TOTAL ASC
+SELECT 
+	c.first_name,
+	SUM(o.total) AS total
+FROM 
+	orders o
+INNER JOIN 
+	customers c ON o.customerId = c.id
+GROUP BY 
+	c.first_name
+ORDER BY 
+	total ASC
