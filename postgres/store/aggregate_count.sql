@@ -4,11 +4,13 @@ SELECT
 FROM
 	customers;
 	
+
 -- counts all records, similar to COUNT(*)
 SELECT
 	COUNT(1) AS total
 FROM
 	customers;
+
 
 -- counts rows only where country is not null
 SELECT
@@ -16,6 +18,7 @@ SELECT
 FROM
 	customers;
 	
+
 -- filtering out rows with WHERE clause
 SELECT
 	COUNT(country) AS total_brazil1
@@ -23,6 +26,7 @@ FROM
 	customers
 WHERE 
 	country = 'Brazil';
+
 
 SELECT
 	COUNT(country) AS total_brazil2
