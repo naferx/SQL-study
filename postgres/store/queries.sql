@@ -3,39 +3,39 @@
 SELECT 
 	*
 FROM 
-	CUSTOMERS;
+	customers;
 
 
 -- obtiene los diferentes paises sin repetidos
 SELECT
-	DISTINCT COUNTRY
+	DISTINCT country
 FROM 
-	CUSTOMERS;
+	customers;
 
 
 -- obtiene el numero de diferentes paises
 SELECT 
-	COUNT(DISTINCT COUNTRY) AS TOTAL_PAISES
+	COUNT(DISTINCT country) AS total_paises
 FROM 
-	CUSTOMERS;
+	customers;
 
 
 -- agregar por pais
 SELECT 
-	COUNTRY,
+	country,
 	COUNT(*)
 FROM 
-	CUSTOMERS
+	customers
 GROUP BY 
-	COUNTRY;
+	country;
 
 -- ordernar de menor a mayor
 SELECT 
-	COUNTRY,
+	country,
 	COUNT(*)
 FROM 
-	CUSTOMERS
+	customers
 GROUP BY 
-	COUNTRY
+	country
 ORDER BY 
 	COUNT(*) ASC;
