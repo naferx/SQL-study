@@ -1,0 +1,3 @@
+/*
+GROUP BY collapses each group of rows into a single result
+*/

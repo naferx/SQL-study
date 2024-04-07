@@ -3,6 +3,9 @@ WITH users_order AS (
     FROM orders
     ORDER BY date
 )
-SELECT *
-FROM customers
-WHERE id IN (SELECT cid from users_order);
+SELECT
+    *
+FROM
+    customers
+WHERE
+    id IN (SELECT cid FROM users_order);
