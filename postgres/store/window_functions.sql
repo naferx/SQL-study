@@ -6,7 +6,7 @@ Perform aggregate operations on group of rows, but they produce a result for eac
 */
 
 -- get the customer and sum of orders per customer
-SELECT 
+SELECT
   customer_id, 
   SUM(total) AS total
 FROM
@@ -20,7 +20,7 @@ GROUP BY
 **/
 
 
--- get the customer, total of each order and total per the only partition
+-- get the customer, total of each order and sum of all orders
 SELECT 
 	customer_id AS cid,
 	total AS order_total,
