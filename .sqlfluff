@@ -4,11 +4,8 @@ runaway_limit = 10
 max_line_length = 80
 indent_unit = space
 
-[sqlfluff:templater:dbt]
-profiles_dir = .
-
 [sqlfluff:indentation]
-tab_space_size = 4
+tab_space_size = 2
 
 [sqlfluff:layout:type:comma]
 spacing_before = touch
