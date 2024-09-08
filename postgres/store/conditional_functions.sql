@@ -20,3 +20,4 @@ This can be used to perform the inverse operation of the COALESCE
 SELECT NULLIF(1, 1) AS mycolumn; -- null
 SELECT NULLIF(1, 2) AS mycolumn; -- 1
 SELECT NULLIF(3, NULL) AS mycolumn; -- 3
+SELECT NULLIF(NULL, NULL) AS mycolumn; -- NULL
