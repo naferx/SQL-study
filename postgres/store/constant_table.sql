@@ -7,15 +7,12 @@ VALUES ( expression [, ...] ) [, ...]
 
 */
 
-SELECT 
-	*
-FROM 
-	( 
-		VALUES (1, 'one'),
-			   (2, 'two'),
-	           (3, 'three')
-	) AS temp (number, word)
-WHERE 
-	number > 1;
-	
-	
+SELECT *
+FROM
+  (
+    VALUES (1, 'one'),
+    (2, 'two'),
+    (3, 'three')
+  ) AS temptable (number, word)
+WHERE
+  number > 1;

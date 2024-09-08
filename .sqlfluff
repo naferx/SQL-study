@@ -34,3 +34,8 @@ capitalisation_policy = upper
 
 [sqlfluff:rules:ambiguous.column_references]
 group_by_and_order_by_style = implicit
+
+
+[sqlfluff:rules:layout.long_lines]
+ignore_comment_clauses = True
+ignore_comment_lines = True
