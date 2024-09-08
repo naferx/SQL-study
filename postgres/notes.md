@@ -4,7 +4,7 @@ Installing on Ubuntu 22.04 jammy
 https://www.postgresql.org/download/linux/ubuntu/
 
 ```shell
-$> sudo apt-get install postgresql-14
+$ sudo apt-get install postgresql-14
 ```
 
 ideas:
@@ -26,12 +26,12 @@ version
 connecting via the PSQL tool
 
 ```shell
-$> psql -h 127.0.0.1 -d store -U postgres -W
+$ psql -h 127.0.0.1 -d store -U postgres -W
 ```
 
 Troubleshooting
 
 - Checking the pgAdmin logs
 ```shell
-$> cat ~/.pgadmin/pgadmin4.log
+$ cat ~/.pgadmin/pgadmin4.log
 ```

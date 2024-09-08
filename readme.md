@@ -1,1 +1,6 @@
- some info here
+## SQL Study
+
+### Formatting files
+```
+$ sqlfluff fix .
+```
