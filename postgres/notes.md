@@ -7,6 +7,12 @@ https://www.postgresql.org/download/linux/ubuntu/
 $ sudo apt-get install postgresql-14
 ```
 
+## Installing Postgres via Docker
+
+```shell
+$ docker run --name postgresql -e POSTGRES_USER=dbuser -e POSTGRES_DB=postgres -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres
+```
+
 ideas:
     create a script for running the evolution SQL files
 
