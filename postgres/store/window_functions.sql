@@ -1,8 +1,7 @@
 /*
+    A window function performs a calculation across a set of table rows that are somehow related to the current row.
 
-A window function performs a calculation across a set of table rows that are somehow related to the current row.
-
-Perform aggregate operations on group of rows, but they produce a result for each row
+    Perform aggregate operations on group of rows, but they produce a result for each row
 */
 
 -- get the customer and sum of orders per customer
