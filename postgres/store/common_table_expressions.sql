@@ -1,11 +1,11 @@
 WITH users_order AS (
-    SELECT customer_id AS cid
-    FROM orders
-    ORDER BY date
+  SELECT customer_id AS cid
+  FROM orders
+  ORDER BY date
 )
-SELECT
-    *
+
+SELECT *
 FROM
-    customers
+  customers
 WHERE
-    id IN (SELECT cid FROM users_order);
+  id IN (SELECT cid FROM users_order);
