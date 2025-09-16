@@ -19,9 +19,9 @@ SELECT
   c.first_name,
   SUM(o.total) AS total
 FROM
-  orders AS o
+  orders o
 INNER JOIN
-  customers AS c ON o.customer_id = c.id
+  customers c ON o.customer_id = c.id
 GROUP BY
   c.first_name
 ORDER BY

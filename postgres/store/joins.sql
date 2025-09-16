@@ -14,55 +14,55 @@
 
  -- implicit inner join
 SELECT
-  o.id AS order_id,
+  o.id order_id,
   c.first_name,
   o.date
 FROM
-  orders AS o,
-  customers AS c
+  orders o,
+  customers c
 WHERE
   o.customer_id = c.id;
 
 
 -- explicit inner join using the JOIN clause
 SELECT
-  o.id AS order_id,
+  o.id order_id,
   c.first_name,
   o.date
 FROM
-  orders AS o
-INNER JOIN
-  customers AS c ON o.customer_id = c.id;
+  orders o
+JOIN
+  customers c ON o.customer_id = c.id;
 
 
 -- explicit inner join using the JOIN clause and changing the order of the tables
 SELECT
-  o.id AS order_id,
+  o.id order_id,
   c.first_name,
   o.date
 FROM
-  customers AS c
-INNER JOIN orders AS o ON c.id = o.customer_id;
+  customers c
+JOIN orders o ON c.id = o.customer_id;
 
 
 -- explicit inner join using the INNER JOIN clause
 SELECT
-  o.id AS order_id,
+  o.id order_id,
   c.first_name,
   o.date
 FROM
-  orders AS o
-INNER JOIN customers AS c ON o.customer_id = c.id;
+  orders o
+INNER JOIN customers c ON o.customer_id = c.id;
 
 
 -- explicit inner join using the INNER JOIN clause and changing the order of the tables
 SELECT
-  o.id AS order_id,
+  o.id order_id,
   c.first_name,
   o.date
 FROM
-  customers AS c
-INNER JOIN orders AS o ON c.id = o.customer_id;
+  customers c
+INNER JOIN orders o ON c.id = o.customer_id;
 
 /*
 	The USING clause is a shorthand that allows you to take advantage of the specific situation where
@@ -79,29 +79,29 @@ INNER JOIN orders AS o ON c.id = o.customer_id;
 */
 
 SELECT
-  o.id AS order_id,
+  o.id order_id,
   c.id AS customer_id,
   c.first_name,
   o.date
 FROM
-  customers AS c
-INNER JOIN orders AS o ON c.customer_id = o.customer_id;
+  customers c
+JOIN orders o ON c.customer_id = o.customer_id;
 
 
 -- left outer join
 SELECT
-  o.id AS order_id,
-  c.id AS customer_id,
-  c.first_name
+o.id order_id,
+c.id customer_id,
+c.first_name
 FROM
-  customers AS c
-LEFT OUTER JOIN orders AS o ON c.id = o.customer_id;
+customers c
+LEFT OUTER JOIN orders o ON c.id = o.customer_id;
 
 -- right outer join
 SELECT
-  o.id AS order_id,
-  c.id AS customer_id,
-  c.first_name
+o.id order_id,
+c.id customer_id,
+c.first_name
 FROM
-  orders AS o
-RIGHT OUTER JOIN customers AS c ON o.customer_id = c.id;
+orders o
+RIGHT OUTER JOIN customers c ON o.customer_id = c.id;
