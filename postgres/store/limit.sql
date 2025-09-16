@@ -1,24 +1,16 @@
-
 -- The LIMIT clause limits the maximum number of records to return
-SELECT
-    id
+SELECT id
 FROM
-    customers
+  customers
 LIMIT 2;
 
 
 -- The OFFSET clause specifies where to start selecting the records to return
-SELECT
-    id
+SELECT id
 FROM
-    orders; -- 1 2 3 4
+  orders; -- 1 2 3 4
 
-SELECT
-    id
+SELECT id
 FROM
-    orders
+  orders
 LIMIT 2 OFFSET 2; -- 3 4
-
-
-
-

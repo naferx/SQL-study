@@ -1,14 +1,10 @@
 -- one-line comment
 
-SELECT 
-	*
-FROM 
-	customers;
+SELECT *
+FROM
+  customers;
 
 /*
-  multiple 
+  multiple
   lines
 */
-
-
- 

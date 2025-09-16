@@ -1,12 +1,10 @@
 /*
 GROUP BY collapses each group of rows into a single result
 */
-SELECT
-    * 
+SELECT *
 FROM orders;
 
 --
-SELECT
- 	*
+SELECT *
 FROM customers
 ORDER BY id;
