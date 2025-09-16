@@ -90,18 +90,18 @@ JOIN orders o ON c.customer_id = o.customer_id;
 
 -- left outer join
 SELECT
-o.id order_id,
-c.id customer_id,
-c.first_name
+  o.id order_id,
+  c.id customer_id,
+  c.first_name
 FROM
-customers c
+  customers c
 LEFT OUTER JOIN orders o ON c.id = o.customer_id;
 
 -- right outer join
 SELECT
-o.id order_id,
-c.id customer_id,
-c.first_name
+  o.id order_id,
+  c.id customer_id,
+  c.first_name
 FROM
-orders o
+  orders o
 RIGHT OUTER JOIN customers c ON o.customer_id = c.id;
