@@ -20,10 +20,11 @@ SELECT
 FROM
   customers;
 
--- for naming tables
+-- for naming tableS
+-- noqa: ALO3s
 SELECT c.id
 FROM
-  customers c;
+  customers AS c;
 
 -- for naming tables using AS
 SELECT c.id
@@ -36,7 +37,8 @@ FROM
   customers;
 
 -- only double quotes for creating alias with space characters
-SELECT id "Id Number 2"
+-- noqa: ALO3
+SELECT id AS "Id Number 2"
 FROM
   customers;
 

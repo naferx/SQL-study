@@ -14,11 +14,11 @@ line_position = trailing
 [sqlfluff:rules:capitalisation.keywords]
 capitalisation_policy = upper
 
-[sqlfluff:rules:aliasing.table]
-aliasing = explicit
+#[sqlfluff:rules:aliasing.table]
+#aliasing = explicit
 
-[sqlfluff:rules:aliasing.column]
-aliasing = explicit
+#[sqlfluff:rules:aliasing.column]
+#aliasing = explicit
 
 [sqlfluff:rules:aliasing.expression]
 allow_scalar = False
