@@ -13,6 +13,6 @@ FROM
     VALUES (1, 'one'),
     (2, 'two'),
     (3, 'three')
-  ) AS temptable (number, word)
+  ) AS temptable (id, word)
 WHERE
-  number > 1;
+  id > 1;

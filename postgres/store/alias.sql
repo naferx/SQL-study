@@ -13,14 +13,9 @@ FROM
   customers;
 
 -- not using AS since it's optional
-SELECT id AS ident
-FROM
-  customers;
-
-
--- not using AS since it's optional
+-- noqa: ALO3
 SELECT
-  id AS identification,
+  id,
   country
 FROM
   customers;
@@ -28,7 +23,7 @@ FROM
 -- for naming tables
 SELECT c.id
 FROM
-  customers AS c;
+  customers c;
 
 -- for naming tables using AS
 SELECT c.id
@@ -41,7 +36,7 @@ FROM
   customers;
 
 -- only double quotes for creating alias with space characters
-SELECT id AS "Id Number 2"
+SELECT id "Id Number 2"
 FROM
   customers;
 
