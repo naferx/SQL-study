@@ -1,13 +1,14 @@
 services:
   postgres:
-    image: postgres:17
+    image: pgvector/pgvector:pg18 # based on the official Postgres 18 image
     container_name: northwind-postgres
     environment:
       POSTGRES_DB: northwind
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - "5433:5432"
+      - "5433:5432" # maps port 5433 to container 5432
     volumes:
-      - ./northwind.sql:/docker-entrypoint-initdb.d/northwind.sql
+      - ./01-init-pgvector.sql:/docker-entrypoint-initdb.d/01-init-pgvector.sql
+      - ./02-northwind.sql:/docker-entrypoint-initdb.d/02-northwind.sql
     restart: unless-stopped
